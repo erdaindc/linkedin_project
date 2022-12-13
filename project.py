@@ -164,10 +164,14 @@ probs = lr.predict_proba([person])
 
 #st.write(f"This person is predicted to be:{predict_linkedin[0]}")
 
-if predict_linkedin == 1:
-    "This person is predicted to be a LinkedIn user"
-else:
-    "This person is predicted to NOT be a LinkedIn user")
+#st.write(f
+#if predict_linkedin == 1:
+#    "This person is predicted to be a LinkedIn user"
+#else:
+#    "This person is predicted to NOT be a LinkedIn user"
+#)
 
-st.write(f"Probability that this person has a LinkedIn account: {probs[0][1]}")
+st.write(f(if predict_linkedin ==1: "This person is a LinkedIn user" else: "This person is not a LinkedIn user"))
+
+st.write(f"Probability that this person has a LinkedIn account: {round(probs[0][1]},2)")
 
