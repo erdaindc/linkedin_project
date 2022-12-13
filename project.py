@@ -148,7 +148,7 @@ x_train, x_test, y_train, y_test = train_test_split(x,
 
 #### 6.	Instantiate a logistic regression model and set class_weight to balanced. Fit the model with the training data.
 
-lr = LogisticRegression()
+lr = LogisticRegression(class_weight = "balanced")
 lr.fit(x_train, y_train)
 
 
@@ -167,7 +167,7 @@ person = ["income_sel","education_sel","parent_sel",
 predict_linkedin = lr.predict([person])
 probs = lr.predict_proba([person])
 
-print(f"predicted class:{predict_linkedin[0]}")
-print(f"Probability that this person has a LinkedIn account: {probs[0][1]}")
+st.write(f"predicted class:{predict_linkedin[0]}")
+st.write(f"Probability that this person has a LinkedIn account: {probs[0][1]}")
 
 
