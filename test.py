@@ -101,33 +101,6 @@ elif income_sel == "150,000+":
 
 
 
-#### 4.	Create a target vector (y) and feature set (X)
-
-y = new["sm_li"]
-x = new[["income", "education", "parent", "married", "female", "age"]]
-
-
-#### 5.	Split the data into training and test sets. Hold out 20% of the data for testing. Explain what each new object contains and how it is used in machine learning
-
-x_train, x_test, y_train, y_test = train_test_split(x,
-                                                    y,
-                                                    stratify=y,       # same number of target in training & test set
-                                                    test_size=0.2,    # hold out 20% of data for testing
-                                                    random_state=987) # set for reproducibility
-
-
-
-#### 6.	Instantiate a logistic regression model and set class_weight to balanced. Fit the model with the training data.
-
-lr = LogisticRegression()
-lr.fit(x_train, y_train)
-
-
-#### 7.	Evaluate the model using the testing data. What is the model accuracy for the model? Use the model to make predictions and then generate a confusion matrix from the model. Interpret the confusion matrix and explain what each number means.
-
-y_pred = lr.predict(x_test)
-confusion_matrix(y_test, y_pred)
-
 
 
 #### 10.	Use the model to make predictions. For instance, what is the probability that a high income (e.g. income=8), with a high level of education (e.g. 7), non-parent who is married female and 42 years old uses LinkedIn? How does the probability change if another person is 82 years old, but otherwise the same?
