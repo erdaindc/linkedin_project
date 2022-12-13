@@ -111,7 +111,7 @@ elif income_sel == "150,000+":
 
 #### 1. Read in the data, call the dataframe "s"  and check the dimensions of the dataframe
 
-s = pd.read_csv(r"C:\Users\edamp\my_project\social_media_usage.csv")
+s = pd.read_csv(r"https://github.com/erdaindc/linkedin_project/blob/main/social_media_usage.csv"")
 s.shape
 
 
@@ -127,6 +127,7 @@ ss = pd.DataFrame({
     "age":np.where(s["age"] <99, s["age"],np.nan)})
 
     
+ss = ss.dropna()
 
 #### 4.	Create a target vector (y) and feature set (X)
 
