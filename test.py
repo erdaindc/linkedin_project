@@ -106,7 +106,7 @@ elif income_sel == "150,000+":
 
 #### 3.	Create a new dataframe called "ss". The new dataframe should contain a target column called sm_li which should be a binary variable ( that takes the value of 1 if it is 1 and 0 otherwise (use clean_sm to create this) which indicates whether or not the individual uses LinkedIn, and the following features: income (ordered numeric from 1 to 9, above 9 considered missing), education (ordered numeric from 1 to 8, above 8 considered missing), parent (binary), married (binary), female (binary), and age (numeric, above 98 considered missing). Drop any missing values. Perform exploratory analysis to examine how the features are related to the target.
 
-ss = pd.DataFrame({
+new = pd.DataFrame({
     "sm_li":np.where(s["web1h"]== 1,1,0),
     "income":np.where(s["income"] <10, s["income"],np.nan),
     "education":np.where(s["educ2"] <9, s["educ2"],np.nan),
@@ -119,8 +119,8 @@ ss = pd.DataFrame({
 
 #### 4.	Create a target vector (y) and feature set (X)
 
-y = ss["sm_li"]
-x = ss[["income", "education", "parent", "married", "female", "age"]]
+y = new["sm_li"]
+x = new[["income", "education", "parent", "married", "female", "age"]]
 
 
 #### 5.	Split the data into training and test sets. Hold out 20% of the data for testing. Explain what each new object contains and how it is used in machine learning
