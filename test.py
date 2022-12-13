@@ -1,3 +1,6 @@
+
+import streamlit as st
+
 st.header("Prediction of LinkedIn Users")
 st.title("Eric Damp")
 st.write("OPIM-607-201 Final Project")
