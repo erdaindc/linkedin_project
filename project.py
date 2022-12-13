@@ -178,5 +178,5 @@ else:
 
 #st.write(f(if predict_linkedin ==1: "This person is a LinkedIn user" else: "This person is not a LinkedIn user"))
 
-st.write(f"Probability that this person has a LinkedIn account: {round(probs[0][1]},2)")
+st.write(f"Probability that this person has a LinkedIn account: {round(probs[0][1],2)}")
 
