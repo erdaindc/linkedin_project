@@ -12,6 +12,9 @@ st.subheader("Eric Damp")
 st.write("OPIM-607-201 Final Project")
 
 
+with st.sidebar:
+    st.image("C:\Users\edamp\my_project")
+
 
 
 age_sel = st.number_input("Age", min_value=0, max_value=98, step=1, key=int)
@@ -164,3 +167,5 @@ probability = lr.predict_proba([new])
 
 st.write(f"This person is {new} a LinkedIn user")
 st.write(f"The probability that this person is a LinkedIn user is: {probs[0][1]}")
+
+
