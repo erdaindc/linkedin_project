@@ -1,9 +1,12 @@
 
 import streamlit as st
 
-st.header("Prediction of LinkedIn Users")
-st.title("Eric Damp")
+st.title("PREDICTING LINKEDIN USERS")
+st.subheader("Eric Damp")
 st.write("OPIM-607-201 Final Project")
+
+
+
 
 age = st.number_input("Age", min_value=0, max_value=98, step=1, key=int)
 
@@ -25,7 +28,7 @@ else:
     married = 0
 
 
-parent = st.checkbox("Do you have a child < 18yrs?",
+parent = st.radio("Do you have a child under 18yrs",
                     options = ["Yes", "No"])
 
 
