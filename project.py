@@ -12,7 +12,7 @@ st.title("PREDICTING LINKEDIN USERS")
 st.subheader("Eric Damp")
 st.write("OPIM-607-201 Final Project")
 
-st.image(Logo.png)
+#st.image(Logo.png)
 
 #with st.sidebar:
     #st.image(Logo.png)
