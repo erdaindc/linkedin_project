@@ -6,14 +6,16 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 import streamlit as st
+from PIL import Image
 
 st.title("PREDICTING LINKEDIN USERS")
 st.subheader("Eric Damp")
 st.write("OPIM-607-201 Final Project")
 
+image = Image.open("C:\Users\edamp\my_project\Logo")
 
 with st.sidebar:
-    st.image("C:\Users\edamp\my_project")
+    st.image(image)
 
 
 
