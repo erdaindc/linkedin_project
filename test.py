@@ -101,22 +101,6 @@ elif income_sel == "150,000+":
 
 
 
-
-
-
-#### 3.	Create a new dataframe called "ss". The new dataframe should contain a target column called sm_li which should be a binary variable ( that takes the value of 1 if it is 1 and 0 otherwise (use clean_sm to create this) which indicates whether or not the individual uses LinkedIn, and the following features: income (ordered numeric from 1 to 9, above 9 considered missing), education (ordered numeric from 1 to 8, above 8 considered missing), parent (binary), married (binary), female (binary), and age (numeric, above 98 considered missing). Drop any missing values. Perform exploratory analysis to examine how the features are related to the target.
-
-new = pd.DataFrame({
-    "sm_li":np.where(s["web1h"]== 1,1,0),
-    "income":np.where(s["income"] <10, s["income"],np.nan),
-    "education":np.where(s["educ2"] <9, s["educ2"],np.nan),
-    "parent":np.where(s["par"] ==1,1,0),
-    "married":np.where(s["marital"] ==1,1,0),
-    "female":np.where(s["gender"] ==2,1,0),
-    "age":np.where(s["age"] <99, s["age"],np.nan)})
-
-    
-
 #### 4.	Create a target vector (y) and feature set (X)
 
 y = new["sm_li"]
