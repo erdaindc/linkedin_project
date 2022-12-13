@@ -161,15 +161,13 @@ confusion_matrix(y_test, y_pred)
 
 #### 10.	Use the model to make predictions. For instance, what is the probability that a high income (e.g. income=8), with a high level of education (e.g. 7), non-parent who is married female and 42 years old uses LinkedIn? How does the probability change if another person is 82 years old, but otherwise the same?
 
-new = ["income_sel","education_sel","parent_sel",
+person = ["income_sel","education_sel","parent_sel",
                     "married_sel","female_sel","age_sel"]
 
-new["predict_linkedin"] = lr.predict(new)
-new
+predict_linkedin = lr.predict([person])
+probs = lr.predict_proba([person])
 
-probability = lr.predict_proba([new])
-
-st.write(f"This person is {new} a LinkedIn user")
-st.write(f"The probability that this person is a LinkedIn user is: {probs[0][1]}")
+print(f"predicted class:{predict_linkedin[0]}")
+print(f"Probability that this person has a LinkedIn account: {probs[0][1]}")
 
 
