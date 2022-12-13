@@ -56,7 +56,7 @@ elif education == "Bachelor's Degree":
     education = 6
 elif education == "Some Postgraduate Schooling":
     education = 7
-elif education == "Postgraduate Degree (Masters, Doctorate,etc)"
+elif education == "Postgraduate Degree (Masters, Doctorate,etc)":
     education = 8
 
 
