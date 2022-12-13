@@ -12,10 +12,10 @@ st.title("PREDICTING LINKEDIN USERS")
 st.subheader("Eric Damp")
 st.write("OPIM-607-201 Final Project")
 
-image = Image.open("C:\Users\edamp\my_project\Logo")
+#image = Image.open("C:\Users\edamp\my_project\Logo")
 
-with st.sidebar:
-    st.image(image)
+#with st.sidebar:
+#    st.image(image)
 
 
 
