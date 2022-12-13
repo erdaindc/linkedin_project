@@ -12,12 +12,6 @@ st.title("PREDICTING LINKEDIN USERS")
 st.subheader("Eric Damp")
 st.write("OPIM-607-201 Final Project")
 
-st.image(https://en.wikipedia.org/wiki/Georgetown_Hoyas#/media/File:Georgetown_Hoyas_logo.svg)
-
-#with st.sidebar:
-    #st.image(Logo.png)
-
-
 
 age_sel = st.number_input("Age", min_value=0, max_value=98, step=1, key=int)
 
