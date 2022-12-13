@@ -106,7 +106,7 @@ elif income_sel == "150,000+":
 
 #### 1. Read in the data, call the dataframe "s"  and check the dimensions of the dataframe
 
-s = pd.read_csv("social_media_usage.csv")
+s = pd.read_csv(r"C:\Users\edamp\my_project\social_media_usage.csv")
 s.shape
 
 
