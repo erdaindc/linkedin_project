@@ -113,7 +113,7 @@ elif income_sel == "150,000+":
 
 #url="https://github.com/erdaindc/linkedin_project/blob/main/social_media_usage.csv"
 #s = pd.read_csv(url)
-s = pd.read_csv()
+s = pd.read_csv("social_media_usage.csv")
 
 
 #### 3.	Create a new dataframe called "ss". The new dataframe should contain a target column called sm_li which should be a binary variable ( that takes the value of 1 if it is 1 and 0 otherwise (use clean_sm to create this) which indicates whether or not the individual uses LinkedIn, and the following features: income (ordered numeric from 1 to 9, above 9 considered missing), education (ordered numeric from 1 to 8, above 8 considered missing), parent (binary), married (binary), female (binary), and age (numeric, above 98 considered missing). Drop any missing values. Perform exploratory analysis to examine how the features are related to the target.
