@@ -165,10 +165,10 @@ person = [income_sel,education_sel,parent_sel,
                     married_sel,female_sel,age_sel]
 
 predict_linkedin = lr.predict([person])
-    if predict_linkedin == 1:
-        "is a LinkedIn user"
-    else:
-        "not a LinkedIn user"
+if predict_linkedin == 1:
+    "is a LinkedIn user"
+else:
+    "not a LinkedIn user"
 probs = lr.predict_proba([person])
 
 st.write(f"This person is predicted to be:{predict_linkedin[0]}")
