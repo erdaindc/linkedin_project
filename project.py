@@ -12,7 +12,7 @@ st.title("PREDICTING LINKEDIN USERS")
 st.subheader("Eric Damp")
 st.write("OPIM-607-201 Final Project")
 
-st.image(Logo.png)
+st.image(https://en.wikipedia.org/wiki/Georgetown_Hoyas#/media/File:Georgetown_Hoyas_logo.svg)
 
 #with st.sidebar:
     #st.image(Logo.png)
