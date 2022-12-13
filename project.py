@@ -34,7 +34,7 @@ else:
     married_sel = 0
 
 
-parent = st.radio("Do you have a child under 18yrs",
+parent_sel = st.radio("Do you have a child under 18yrs",
                     options = ["Yes", "No"])
 
 
