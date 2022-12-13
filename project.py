@@ -165,12 +165,12 @@ person = [income_sel,education_sel,parent_sel,
                     married_sel,female_sel,age_sel]
 
 predict_linkedin = lr.predict([person])
+    if predict_linkedin == 1:
+        "is a LinkedIn user"
+    else:
+        "not a LinkedIn user"
 probs = lr.predict_proba([person])
 
-st.button("Submit"
-    st.write(f"This person is predicted to be:{predict_linkedin[0]}")
-    st.write(f"Probability that this person has a LinkedIn account: {probs[0][1]}"))
-
-#st.write(f"This person is predicted to be:{predict_linkedin[0]}")
-#st.write(f"Probability that this person has a LinkedIn account: {probs[0][1]}")
+st.write(f"This person is predicted to be:{predict_linkedin[0]}")
+st.write(f"Probability that this person has a LinkedIn account: {probs[0][1]}")
 
